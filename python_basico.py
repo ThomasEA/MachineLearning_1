@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-Este é um arquivo de script temporário.
-"""
 import numpy as np
 import pandas as pd
 
@@ -71,15 +65,19 @@ def calc_sd(arr):
     
     print 'Desvio padrão: ', resultado
 
-_99_bottles_of_beer()
-"""
 is_impar(10)
+is_impar(5)
+print '--------'
 maiorNumero()
+print '--------'
 somaNumerosLista()
+print '--------'
 fibonacci(15)
-
+print '--------'
+_99_bottles_of_beer()
+print '--------'
 np_maior_numero_array()
+print '--------'
 np_soma_array()
+print '--------'
 calc_sd([ -10, 10, 0, 1, 1, 7, 11, 5, 4, 3 ])
-
-"""
