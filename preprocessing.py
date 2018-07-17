@@ -29,6 +29,8 @@ columns = np.array([['sepal_length', 'sepal_width', 'petal_length', 'petal_width
 
 tmp = np.concatenate((columns, iris), axis=0)
 
+iris.columns = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class']
+
 df = pd.DataFrame(data=tmp[1:,:], columns=tmp[0,:])
 
 ### Step 4.  Algum dado ausente?
@@ -44,6 +46,12 @@ k = df.iloc[9:28, [1]]
 ### Step 6. Certo, modifique os valores NaN por 1.0
 
 df = df.fillna(1.)
+
+klp = iris.copy()
+klp = klp.iloc[:,:-1]
+klp[np.isnan(klp)] = 1.0
+
+tmp[np.isnan(klp)] = 1.0
 
 ### Step 7. Agora delete a coluna da classe
 
