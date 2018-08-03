@@ -6,6 +6,7 @@ Created on Mon Jul 30 20:01:32 2018
 """
 
 import pandas as pd
+import numpy as np
 from matplotlib import pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -93,11 +94,11 @@ while (abs(curr - prev) > threshold) and (epoch < max_epoch):
     
     prev = curr
     curr = cost_function(X, fx, hypothesis, t0, t1)
-    print 'custo na época %d: %f' % (epoch, curr)
+    print('custo na época ', epoch, ': ', curr)
     epoch += 1
 
-print t0
-print t1
+print('t0: ', t0)
+print('t1: ', t1)
 
 #Aplicando sobre os dados a serem preditos
 X_t = testset[:, 0]
