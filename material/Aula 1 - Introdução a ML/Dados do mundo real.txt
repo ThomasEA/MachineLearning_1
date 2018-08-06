@@ -1,0 +1,8 @@
+
+CIDACS - https://cidacs.bahia.fiocruz.br/categorias-de-nucleo/cadu/
+
+DataPoa - http://datapoa.com.br/dataset
+
+Dados RS - http://dados.rs.gov.br/
+
+Kaggle - https://www.kaggle.com/datasets
